@@ -9,7 +9,7 @@ import { User } from './user.model';
 @Injectable()
 export class UsersService {
   // `currentUser` contains the current user
-  currentUser: Subject<User> = new BehaviorSubject<User>(null);
+  currentUser: Subject<User| null> = new BehaviorSubject<User | null>(null);
 
   public setCurrentUser(newUser: User): void {
     this.currentUser.next(newUser);

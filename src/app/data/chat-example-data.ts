@@ -83,8 +83,7 @@ export class ChatExampleData {
             thread: tEcho
           })
         );
-      },
-                null);
+      });
 
 
     // reverse bot
@@ -97,8 +96,7 @@ export class ChatExampleData {
             thread: tRev
           })
         );
-      },
-                null);
+      });
 
     // waiting bot
     messagesService.messagesForThreadUser(tWait, wait)
@@ -125,8 +123,7 @@ export class ChatExampleData {
             );
           },
           waitTime * 1000);
-      },
-                null);
+      });
 
 
   }
